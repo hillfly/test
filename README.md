@@ -3,19 +3,30 @@ Android WifiChat
 
 This repository contains the source code for the WifiChat.
 
+Please see the issues section to report any bugs or feature requests and to see the list of known issues.
+
 #### Debug mode:
 ```java
-// src/szu/wifichat/android/socket/udp/UDPSocketThread.java 
+// src/szu/wifichat/android/socket/udp/UDPSocketThread.java
 // Line 111
-if (SessionUtils.isItself(senderIMEI)) { 
+if (SessionUtils.isItself(senderIMEI)) {
 ```
 ```java
-// src/szu/wifichat/android/socket/udp/UDPSocketThread.java 
+// src/szu/wifichat/android/socket/udp/UDPSocketThread.java
 // Line 330
-if (SessionUtils.isItself(receiveIMEI)) { 
+if (SessionUtils.isItself(receiveIMEI)) {
 ```
-
-Please see the issues section to report any bugs or feature requests and to see the list of known issues.
+#### Nomal mode:
+```java
+// src/szu/wifichat/android/socket/udp/UDPSocketThread.java
+// Line 111
+if (!SessionUtils.isItself(senderIMEI)) {
+```
+```java
+// src/szu/wifichat/android/socket/udp/UDPSocketThread.java
+// Line 330
+if (!SessionUtils.isItself(receiveIMEI)) {
+```
 
 ## License
 
