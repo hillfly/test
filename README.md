@@ -9,6 +9,12 @@ This repository contains the source code for the WifiChat.
 // Line 111
 if (SessionUtils.isItself(senderIMEI)) { 
 ```
+```java
+// src/szu/wifichat/android/socket/udp/UDPSocketThread.java 
+// Line 330
+if (SessionUtils.isItself(receiveIMEI)) { 
+```
+
 Please see the issues section to report any bugs or feature requests and to see the list of known issues.
 
 ## License
