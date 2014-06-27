@@ -3,6 +3,11 @@ Android WifiChat
 
 This repository contains the source code for the WifiChat.
 
+#### Debug mode:
+```java
+	 if (SessionUtils.isItself(senderIMEI)) { 
+```
+
 Please see the issues section to report any bugs or feature requests and to see the list of known issues.
 
 ## License
